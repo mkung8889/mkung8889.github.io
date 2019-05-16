@@ -1,49 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <img src="../../Downloads/profile.jpeg" alt="profile picture">
-    <h1>Michael Kung</h1>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
 
-    <p>
-        Hello blah blah blah this is the first bio paragraph blah blah
-        <br>
-        This is the second paragraph
-    </p>
+    <div id="lead">
+        <div id="lead-content">
+            <!-- <img src="images/img_self.jpg" alt="profile_pic" style="scale:0.5;"> -->
+            <h1>Michael Kung</h1>
+            <h2>Data Analyst</h2>
+            <a href="#" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
 
-    <ul>
-        <il>facebook</il>
-        <il>instagram</il>
-        <il>twitter</il>
-        <il>snapchat</il>
-    </ul>
+        <div id="lead-overlay"></div>
 
-    <table border="1">
-        <th>
-            <td>Favorite Movies</td>
-            <td>Favorite Songs</td>
-            <td>Favorite Activities</td>
-        </th>
-        <tr>
-            <td>movie1</td>
-            <td>song1</td>
-            <td>activity1</td>
-        </tr>
-        <tr>
-            <td>movie2</td>
-            <td>song2</td>
-            <td>activity2</td>
-        </tr>
-        <tr>
-            <td>movie3</td>
-            <td>song3</td>
-            <td>activity3</td>
-        </tr>
-    </table>
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Michael Kung is a motivated, self-starting Data Analyst with a can-do attitude. Proficient in Python, JavaScript, MySQL, HTML+CSS. 
+                        Currently seeking employment as a Data Analyst.  
+                        Experienced with data processings, data visualization, creating dashboards, web-scrappings, ETL. Currently learning Machine Learning using Octave. 
+                        Passionate about data, present data, and how to utilize data to make business decision. Seeking to leverage data analytical skills to improve corporate performance. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="May 2017 – Currently">
+                <h3>Fidelity Dental P.A.</h3>
+                <h4>System Administrator + Office Manager</h4>
+                <p>
+                    <ul>
+                        <li>Oversee and maintain daily operation and revenue enhancements necessary to keep competitive Dental office viable.</li>
+                        <li>Spearheaded new patient acquisition resulting in a 400+% increase in new patients.</li>
+                        <li>Setup a MySQL database to monitor and analyze production/collection of each dentiti, as well as analyze patient demographics.</li>
+                        <li>Create and maintain website using Wix as a starter and used JavaScript to customize.</li>
+                    </ul>
+                </p>
+            </div>
+            <div data-date="January 2016 – May 2017">
+                <h3>Univeristy of Texas at Dallas</h3>
+                <h4>Graduate Researcher</h4>
+                <p>
+                   Studied the effects of aging has on memory. 
+                   <ul>
+                       <li>Performed experiments and analyzed data researching aging memory. </li>
+                       <li>Used behavioral study and analyzed neurochemistry of brain samples </li>
+                       <li>Ran statistical analysis to see if changes in neurochemistry correlate to differences in the behavioral memory tests.</li>
+                   </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Texas at Austin McCombs </h3>
+            <span class="education-date">Oct 2018 - April 2019</span>
+            <h4>Data Analysis and Visualization Boot Camp</h4>
+            <!-- <p>
+                insert description
+            </p> -->
+        </div>
+        <div class="education-block">
+            <h3>University of Texas at Dallas </h3>
+            <span class="education-date">Aug 2015 - May 2017</span>
+            <h4>Master of Science in Applied Cognition and Neuroscience</h4>
+            <!-- <p>
+                insert description
+            </p> -->
+        </div>
+        <div class="education-block">
+            <h3>Texas A&M Univeristy </h3>
+            <span class="education-date">Aug 2010 - May 2014</span>
+            <h4>Bachelor of Arts in Biology w/ Minor in Business</h4>
+            <!-- <p>
+                insert description
+            </p> -->
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Movie Recommender App</h3>
+                        <p>
+                            insert project description
+                        </p>
+                        <a href="https://movie-suggestion-app.herokuapp.com/">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Belly Button Diversity Dashboard</h3>
+                        <p>
+                            insert project description
+                        </p>
+                        <a href="https://mkung-bellybuttondiversity.herokuapp.com/">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Javascript</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Tableau</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="m.kung889@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2019 Michael Kung
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
+
 </html>
